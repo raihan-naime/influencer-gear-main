@@ -1,0 +1,93 @@
+/* common sheared styles */
+*{
+
+}
+header{
+    /* border: 2px solid rebeccapurple; */
+    color: #3A3A3A;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* nav related styles */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-column{
+    display: flex;
+}
+.nav-title{
+    font-size: 1.5rem;
+}
+.nav-column li{
+    list-style: none;
+    margin-left: 20px;
+}
+.nav-column li a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+.nav-list{
+    display: flex;
+}
+
+/* header column related styles */
+/* header first column styles */
+/* .header-banner{
+    border: 1px solid brown;
+} */
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.header-title{
+    font-size: 3.25rem;
+    font-weight: bolder;
+    max-width: 580px;
+}
+.header-description{
+    font-weight: 500;
+    max-width: 505px;
+}
+.btn-primary{
+    background-color: #E02C6D;
+    height: 45px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+/* header second column */
+/* .header-image{
+    border-image: url('../images/Circle\ design.svg');
+    max-width: 440px;
+    max-height: 414px;
+} */
+.img-section{
+    margin: 50px auto;
+    /* border: 1px solid brown; */
+    max-width: 1110px;
+    height: 110px;
+}
+.img-section img{
+    margin-left: 57px;
+}
+
+
+/* responsive layout */
+/* for small devices */
+@media screen and (max-width: 640px) {
+    .nav-container, .nav-list{
+        flex-direction: column;
+    }
+    .header-content{
+        flex-direction: column-reverse;
+    }
+    .img-section img{
+        margin: auto;
+    }
+}
