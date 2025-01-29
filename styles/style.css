@@ -88,7 +88,7 @@ body{
 /* main section styles */
 main{
     /* border: 2px solid rebeccapurple; */
-    background-color: rgb(252, 249, 249);
+    /* background-color: rgb(252, 249, 249); */
     max-width: 1050px;
     /* max-height: 1600px; */
     margin: 0 auto;
@@ -107,7 +107,7 @@ main{
 }
 .card{
     /* border: 1px solid red; */
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 3px gray;
     background-color: #ffffff;
     border-radius: 5px;
     max-width: 300px;
@@ -182,6 +182,30 @@ main .see-more-btn{
     margin-left: 100px;
 }
 
+/* footer styles */
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    height: 250px;
+}
+.footer-content{
+    /* border: 2px solid white; */
+    width: 260px;
+    height: 140px;
+    margin: 0px auto;
+    padding: 50px;
+    text-align: center;
+}
+.footer-title{
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+.footer-description{
+    font-size: 0.9rem;
+}
+i{
+    margin-left: 10px;
+}
 
 /* responsive layout */
 /* for small devices */
@@ -189,7 +213,10 @@ main .see-more-btn{
     .nav-container, .nav-list, .feature{
         flex-direction: column;
     }
-    .header-content{
+    .nav-list li{
+        margin-top: 10px;
+    }
+    .header-content, .feature{
         flex-direction: column-reverse;
     }
     .img-section img{
